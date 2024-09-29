@@ -1,0 +1,62 @@
+To create an online digital art store for selling anime-based artworks, the following UI sections are needed:
+
+1. Header:
+The header should contain the logo of the store, a search bar to search for specific artworks, and a navigation menu with the following options:
+- Home
+- Shop
+- About Us
+- Contact Us
+
+2. Hero Section:
+The hero section should contain a large banner image showcasing the best-selling artwork or a new collection. It should also have a call-to-action button that leads to the shop page.
+
+3. Featured Artworks:
+The featured artworks section should display a grid of the latest or most popular artworks. Each artwork should have an image, title, artist name, price, and a "Buy Now" button.
+
+4. Artwork Categories:
+The artwork categories section should display a list of categories such as:
+- Anime Characters
+- Manga
+- Fan Art
+- Original Artwork
+
+Each category should have a thumbnail image and a title. Clicking on a category should lead to a page displaying all the artworks in that category.
+
+5. Artwork Details:
+The artwork details page should display the selected artwork's image, title, artist name, price, description, and related artworks. It should also have a "Buy Now" button and an option to add the artwork to the cart.
+
+6. Cart:
+The cart page should display all the artworks added to the cart, their images, titles, prices, and a total price. It should also have an option to remove an artwork from the cart and a "Checkout" button.
+
+7. Checkout:
+The checkout page should display a form for the customer to fill in their shipping and payment details. It should also have a summary of the order, including the artworks' images, titles, prices, and a total price. It should also have a "Place Order" button.
+
+8. About Us:
+The About Us page should contain information about the store, the artist, and their vision. It should also have a section displaying the artist's latest artworks.
+
+9. Contact Us:
+The Contact Us page should contain a form for the customer to fill in their name, email, and message. It should also have the store's contact information, including the address, phone number, and email.
+
+10. Footer:
+The footer should contain links to the following pages:
+- Home
+- Shop
+- About Us
+- Contact Us
+It should also have links to the store's social media pages and a newsletter subscription form.
+
+11. Charts:
+The charts section should display the store's sales data, including the number of artworks sold, revenue, and popular categories. It should also have a graph displaying the store's growth over time.
+
+12. Buttons:
+The buttons should be consistent throughout the UI and should have a clear call-to-action. The "Buy Now" button should be prominent and easily accessible. The "Add to Cart" button should be visible on the artwork details page. The "Checkout" button should be visible on the cart page. The "Place Order" button should be visible on the checkout page.
+
+By incorporating these UI sections, the online digital art store for selling anime-based artworks will have a user-friendly and visually appealing interface that will attract customers and increase sales.
+
+
+Developing Application
+1. For Sanity Desk - npx sanity dev
+
+
+Sanity "Development" API Token
+skoIr71fdfelp2p7d6crz3VKuoU9sC0Js9YazFJA5NRzWend7rrGjlBi63BzLWMzVqUNztKMAODIBgdtfQdn3T0bZiJWtWJOsRQC2fqaRX9wRqTUAWvcmCFsLoCFipp6uLHkT4l7hAcorbsHRFwzARTKcSCz3F2LyKwL8Qy5Bhh9POnKiHo0
