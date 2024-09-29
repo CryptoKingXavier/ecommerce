@@ -1,10 +1,12 @@
 "use client"
 
+import { v4 as uuidv4 } from "uuid"
 import { Product, Cart } from '@/app/components'
 import { useStateContext } from '@/app/context/StateContext'
 import { urlFor } from '@/app/lib/client'
 import React, { useState } from 'react'
 import { AiFillStar, AiOutlineMinus, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai'
+
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product
@@ -20,7 +22,7 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <div className='small-images-container'>
             {image?.map((item, i) => (
-              <img className={i === index ? 'small-image selected-image' : 'small-image'} src={urlFor(item.asset._ref).toString()} onMouseEnter={() => setIndex(i)} />
+              <img key={uuidv4()} className={i === index ? 'small-image selected-image' : 'small-image'} src={urlFor(item.asset._ref).toString()} onMouseEnter={() => setIndex(i)} />
             ))}
           </div>
         </div>
