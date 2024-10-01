@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import React from "react";
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo">
-        <Link href="/">Yuuj1nee Store</Link>
+        <Link href="/">Hanei's Art & Prints</Link>
       </p>
 
       <button

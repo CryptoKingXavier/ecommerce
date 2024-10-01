@@ -10,10 +10,6 @@ body,
   width: 0px;
 }
 
-body {
-  background-color: snow;
-}
-
 a {
   color: inherit;
   text-decoration: none;

@@ -5,6 +5,7 @@ import { BsBagCheckFill } from "react-icons/bs"
 import { useStateContext } from '../context/StateContext'
 import Link from 'next/link'
 import { runFireworks } from '../lib/utils'
+import { AiOutlineWhatsApp } from 'react-icons/ai'
 
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext()
@@ -24,11 +25,19 @@ const Success = () => {
           <BsBagCheckFill />
         </p>
         <h2>Thank you for your order!</h2>
-        <p className='email-msg'>Check your email inbox for the receipt.</p>
-        <p className='description'>
-          If you have any questions, please email
-          <a className='email' href='mailto:order@example.com'>
-            order@example.com
+        <p className='email-msg' style={{ fontStyle: 'italic' }}>Please contact the vendor via WhatsApp below, <br />
+          and attach the downloaded cart image to complete your order
+        </p>
+        <Link href="https://wa.link/1hj6xx" target='_blank'>
+          <button className='btn' type='button' width="300px">
+            <AiOutlineWhatsApp />
+          </button>
+        </Link>
+        <p className='description' style={{ fontStyle: 'italic' }}>
+          For more enquiry, <br />
+          please email
+          <a className='email' href='mailto:haneikurosakiartmail@gmail.com'>
+            haneikurosakiartmail@gmail.com
           </a>
         </p>
         <Link href="/">

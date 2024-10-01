@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Yuuj1nee Store",
+  title: "Hanei's Art & Prints",
   description: "Author: Yuuj1nee",
 };
 
