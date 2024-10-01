@@ -10,18 +10,20 @@ const Home = async () => {
     <Fragment>
       <HeroBanner heroBanner={posters.length && posters[0]} />
 
-      <div className="products-heading">
-        <h2>Best Selling Products</h2>
-        <p>Speakers of many variations</p>
-      </div>
-
-      {products && products.length > 0 ? (
-        <div className="products-container">
-          {products?.map((product) => <Product key={product._id.toString()} product={product} />)}
+      <div className="products-ctn">
+        <div className="products-heading">
+          <h2>Best Selling Products</h2>
+          <p>Speakers of many variations</p>
         </div>
-      ) : (
-        <p>No products found!</p>
-      )}
+
+        {products && products.length > 0 ? (
+          <div className="products-container">
+            {products?.map((product) => <Product key={product._id.toString()} product={product} />)}
+          </div>
+        ) : (
+          <p>No products found!</p>
+        )}
+      </div>
 
       <FooterBanner footerBanner={posters && posters[0]} />
     </Fragment>

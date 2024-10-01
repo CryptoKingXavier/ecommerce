@@ -10,6 +10,10 @@ body,
   width: 0px;
 }
 
+body {
+  background-image: url("./assets/bg-anime.jpg");
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -38,7 +42,7 @@ a {
 }
 .marquee {
   position: relative;
-  height: 400px;
+  height: 350px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -67,12 +71,12 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: #ffccfa;
   font-size: 18px;
 }
 .cart-icon {
   font-size: 25px;
-  color: gray;
+  color: #ffccfa;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
@@ -94,6 +98,13 @@ span.text-red {
   text-align: center;
   font-weight: 600;
 }
+
+.products-ctn {
+  background-color: #dcdcdc;
+  border-radius: 1rem;
+  padding-bottom: .5rem;
+}
+
 .products-container {
   display: flex;
   flex-wrap: wrap;
@@ -101,6 +112,7 @@ span.text-red {
   gap: 15px;
   margin-top: 20px;
   width: 100%;
+  padding-bottom: 1.5rem;
 }
 .product-card {
   cursor: pointer;
@@ -121,17 +133,20 @@ span.text-red {
 .product-name {
   font-weight: 500;
   text-align: center;
+  font-style: italic;
+  color: darkslategray;
 }
 .product-price {
   font-weight: 800;
   margin-top: 6px;
-  color: black;
+  color: darkslateblue;
   text-align: center;
+  font-style: italic;
 }
 
 .hero-banner-container {
   padding: 100px 40px;
-  background-color: #dcdcdc;
+  background-color: #d4a5ff;
   border-radius: 15px;
   position: relative;
   height: 500px;
@@ -198,6 +213,7 @@ span.text-red {
   text-align: center;
   margin: 40px 0px;
   color: #324d67;
+  padding-top: 1.5rem;
 }
 .products-heading h2 {
   font-size: 40px;
@@ -209,7 +225,7 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #d4a5ff;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -282,7 +298,7 @@ span.text-red {
 }
 
 .footer-container {
-  color: #324d67;
+  color: #ffccfa;
   text-align: center;
   margin-top: 20px;
   padding: 30px 10px;
@@ -394,7 +410,6 @@ span.text-red {
   border: none;
   font-size: 20px;
   margin-top: 10px;
-  margin-top: 40px;
   text-transform: uppercase;
   background-color: #f02d34;
   color: #fff;
@@ -411,6 +426,9 @@ span.text-red {
   margin: 40px;
   margin-top: 60px;
   color: #324d67;
+  background-color: snow;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .product-detail-image {
@@ -538,12 +556,14 @@ span.text-red {
 
 .maylike-products-wrapper {
   margin-top: 120px;
+  border-radius: 1.5rem;
+  background-color: #dcdcdc;
 }
 .maylike-products-wrapper h2 {
   text-align: center;
-  margin: 50px;
+  margin-bottom: 10px;
+  padding-top: 1.5rem;
   color: #324d67;
-
   font-size: 28px;
 }
 .maylike-products-container {
@@ -558,14 +578,14 @@ span.text-red {
 }
 .success-wrapper,
 .cancel-wrapper {
-  background-color: white;
+  /* background-color: snow; */
   min-height: 60vh;
 }
 .success,
 .cancel {
   width: 1000px;
   margin: auto;
-  margin-top: 160px;
+  margin-top: 50px;
   background-color: #dcdcdc;
   padding: 50px;
   border-radius: 15px;
@@ -591,6 +611,9 @@ span.text-red {
   font-weight: 600;
   text-align: center;
 }
+.success .email-msg button {
+  background: linear-gradient(90deg, #25d366 0%, #128c7e 100%);
+}
 .cancel p {
   font-size: 20px;
   font-weight: 600;
@@ -600,11 +623,14 @@ span.text-red {
   font-weight: 600;
   text-align: center;
   margin: 10px;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .success .description .email {
   margin-left: 5px;
   color: #f02d34;
+}
+.success .description .email button {
+  background: linear-gradient(90deg, #d93025 0%, #ea4335 100%);
 }
 .product-max-qty {
   margin-top: 10px;
