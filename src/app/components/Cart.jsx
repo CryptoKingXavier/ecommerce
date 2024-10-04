@@ -1,13 +1,12 @@
 "use client"
 
 import Link from 'next/link'
+import html2canvas from 'html2canvas'
 import React, { useRef } from 'react'
-import toast from 'react-hot-toast'
-import { AiOutlineLeft, AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 'react-icons/ai'
+import { urlFor } from '../lib/client'
 import { TiDeleteOutline } from "react-icons/ti"
 import { useStateContext } from '../context/StateContext'
-import { urlFor } from '../lib/client'
-import html2canvas from 'html2canvas'
+import { AiOutlineLeft, AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 'react-icons/ai'
 
 const Cart = () => {
   const cartRef = useRef(null)

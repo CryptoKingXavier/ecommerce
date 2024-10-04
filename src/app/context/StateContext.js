@@ -1,8 +1,7 @@
 "use client"
 
-import product from '@/sanity/schemaTypes/product'
-import React, { createContext, useContext, useState, useEffect } from 'react'
 import toast from 'react-hot-toast'
+import React, { createContext, useContext, useState } from 'react'
 
 const Context = createContext()
 
@@ -11,10 +10,10 @@ export const StateContext = ({ children }) => {
   const [cartItems, setCartItems] = useState([])
   const [showCart, setShowCart] = useState(false)
   const [totalPrice, setTotalPrice] = useState(0)
-  const [totalQuantities, setTotalQuantities] = useState(0)
+  const [totalQuantities, setTotalQuantities] = useState(0)  
 
-  let foundProduct
   let index
+  let foundProduct
 
   const onAdd = (product, quantity) => {
     const checkProductInCart = cartItems.find((item) => item._id === product._id)

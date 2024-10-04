@@ -5,7 +5,7 @@ import { BsBagCheckFill } from "react-icons/bs"
 import { useStateContext } from '../context/StateContext'
 import Link from 'next/link'
 import { runFireworks } from '../lib/utils'
-import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
 
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext()
@@ -29,9 +29,9 @@ const Success = () => {
           Attach the downloaded cart image to complete order
         </p>
         <p className='email-msg'>
-          <Link href="https://wa.link/1hj6xx" target='_blank'>
+          <Link href="https://www.instagram.com/yuuj1nee" target='_blank'>
             <button className='btn' type='button' width="300px">
-              Order Now <AiOutlineWhatsApp />
+              Order Now <AiOutlineInstagram />
             </button>
           </Link>
         </p>
