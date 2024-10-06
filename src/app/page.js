@@ -4,11 +4,11 @@ import { client } from "./lib/client"
 
 
 const Home = async () => {
-  const { posters, products } = await getSanityData()
+  const { products } = await getSanityData()
 
   return (
     <Fragment>
-      <HeroBanner heroBanner={posters.length && posters[0]} />
+      <HeroBanner />
 
       <div className="products-ctn">
         <div className="products-heading">
@@ -25,19 +25,16 @@ const Home = async () => {
         )}
       </div>
 
-      <FooterBanner footerBanner={posters && posters[0]} />
+      <FooterBanner />
     </Fragment>
   );
 }
 
 export const getSanityData = async () => {
-  const postersQuery = '*[_type == "poster"]'
   const productsQuery = '*[_type == "product"]'
-
-  const posters = await client.fetch(postersQuery)
   const products = await client.fetch(productsQuery)
 
-  return { posters, products }
+  return { products }
 }
 
 export default Home

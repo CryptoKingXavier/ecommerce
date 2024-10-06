@@ -1,14 +1,13 @@
-import sanityClient from "@sanity/client"
+import { createClient } from "@sanity/client"
 import imageUrlBuilder from "@sanity/image-url"
 
-
 // Creating a Sanity Client
-export const client = sanityClient({
-    projectId: "lrc0abi2",
-    dataset: "production",
-    apiVersion: "2024-09-26",
-    useCdn: false,
-    token: "skoIr71fdfelp2p7d6crz3VKuoU9sC0Js9YazFJA5NRzWend7rrGjlBi63BzLWMzVqUNztKMAODIBgdtfQdn3T0bZiJWtWJOsRQC2fqaRX9wRqTUAWvcmCFsLoCFipp6uLHkT4l7hAcorbsHRFwzARTKcSCz3F2LyKwL8Qy5Bhh9POnKiHo0"
+export const client = createClient({
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+    apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION,
+    useCdn: true,
+    token: process.env.NEXT_PUBLIC_SANITY_TOKEN
 })
 
 // For Sanity Images
