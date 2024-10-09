@@ -13,7 +13,7 @@ const Home = async () => {
       <div className="products-ctn">
         <div className="products-heading">
           <h2>Best Selling Products</h2>
-          <p>Speakers of many variations</p>
+          <p>Art Prints of Various Sizes</p>
         </div>
 
         {products && products.length > 0 ? (
